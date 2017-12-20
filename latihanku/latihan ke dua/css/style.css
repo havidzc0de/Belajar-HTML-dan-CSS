@@ -1,0 +1,107 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+body {
+	background: #DDDDDD;
+}
+#wrapper {
+	width: 780px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+#header {
+	background: url(images/header.jpg) repeat-x #555;
+	height: 70px;
+	width: 100%;
+	padding: 5px;
+	margin: 20px 0;
+	overflow: hidden;
+}
+#header img{
+	width: 130px;
+	height: 35px;
+}
+#menu-utama {
+	margin-top: 3px;
+	list-style: none;
+}
+#menu-utama li{
+	float: left;
+	padding: 8px 20px;
+	border-right: 1px solid black;
+}
+#menu-utama li a{
+	text-decoration: none;
+	color: white;
+}
+#header form input{
+	float: right;
+	margin-top: 7px;
+	margin-right: 20px;
+}
+#daftar-artikel {
+	float: left;
+	width: 470px;
+}
+.artikel {
+	background: white;
+	margin-bottom: 10px;
+	padding: 10px;
+	overflow: hidden;
+}
+.artikel img{
+	width: 150px;
+	height: 150px;
+	float: left;
+	margin-right: 10px;
+}
+.artikel b{
+	color:#616060;
+	font-size: 14px;
+	font-weight: bold;
+	background-color: #DDDDDD;
+	margin-right: 8px;
+	padding: 1px;
+}
+.artikel p{
+	font-size: 13px;
+	margin: 10px 0px;
+}
+.artikel a{
+	background: #DDDDDD;
+	color: black;
+	float: right;
+	text-decoration: none;
+}
+.artikel a:hover{
+	background: red;
+}
+#sidebar {
+	width: 270px;
+	float: right;
+}
+#sidebar h2{
+	font-size: 18px;
+	margin: 10px 0;
+}
+#sidebar p{
+	color: #636363;
+	line-height: 20px;
+}
+#sidebar ul{
+	margin-left: 10px;
+}
+#sidebar ul a{
+	text-decoration: none;
+	color: #636363;
+}
+#footer {
+	clear: both;
+	margin: 20px 0;
+	background-color: #f0f0f0;
+	color: #555555;
+	padding:5px;
+	text-align: center;
+}
