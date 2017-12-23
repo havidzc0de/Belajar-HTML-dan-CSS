@@ -1,0 +1,146 @@
+/* Reset Margin dan Font bawaan browser*/
+*{
+	margin: 0;
+	padding: 0;
+	font-family:calibri,"segoe ui",arial,tahoma,sans-serif; 
+}
+/* Merubah background pada tag Body*/
+body {
+	background-color: #DDDDDD;
+}
+/* margin:0 auto memberikan jarak dari atas sebesar 0,
+dann untuk sisi kiri-kanannya beri nilai auto agar div ini berada di tengah*/
+#wrapper {
+	width: 780px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+/* menggunakan gambar 10px yang direpeat-x
+Kita menggunakan nilai 100% agar lebar dari header sama dengan lebar #wrapper . Dan
+untuk background anda bisa tebak apa yang saya lakukan. Ya, saya menggunakan CSS-
+shorthand untuk memanggil gambar.
+Pertama kita tentukan lokasi gambar (background-image) lalu jenis pengulangan
+(background-repeat) dan terakhir kita tentukan background-color sebagai fallback ketika
+gambar tidak berhasil dimuat.
+Kita juga tambahkan overflow : hidden karena di dalam header nantinya akan ada
+elemen yang memiliki floating (menu dan form).*/
+#header {
+	background : url(images/header.jpg) repeat-x #555;
+	width: 100%;
+	height: 70px;
+	padding: 5px;
+	margin: 20px 0;
+	overflow: hidden;
+}
+
+#header img {
+	width: 130px;
+	height: 35px;
+}
+
+#menu-utama {
+	margin-top: 3px;
+	list-style: none;
+}
+#menu-utama li {
+	float: left;
+	padding: 8px 20px;
+	border-right: 1px solid #555555;
+}
+#menu-utama li a:link{
+	color: white;
+	text-decoration: none;
+}
+#menu-utama li a:visited{
+	color: white;
+}
+
+#header form{
+	float: right;
+	margin-top: 7px;
+	margin-right: 10px;
+}
+#header form input{
+	border:none;
+	height: 20px;
+}
+
+#daftar-artikel {
+	width: 470px;
+	float: left;
+}
+
+.artikel {
+	background-color: white;
+	padding: 10px;
+	margin-bottom: 20px;
+	overflow: hidden;
+}
+
+.artikel img {
+	float: left;
+	margin-right:10px;
+	width: 200px;
+	height: 165px;
+}
+.artikel b {
+	color: #616060;
+	background-color: #DDDDDD;
+	padding:3px;
+	font-size: 12px;
+	font-weight: bold;
+	margin-right: 10px;
+}
+
+.artikel p {
+	margin: 
+	10px 0;
+}
+.artikel a{
+	display: block;
+	text-align: right;
+	text-decoration: none;
+	color: black;
+
+}
+.artikel a:hover{
+	color: red;
+}
+
+#sidebar {
+	background-color: white;
+
+}
+
+#sidebar{
+	width: 270px; 
+	float: right;
+}
+
+#sidebar h2{
+	font-size: 18;
+	margin: 10px 0;
+}
+
+#sidebar p {
+	line-height: 20px;
+	color: #636363;
+}
+
+#sidebar ul {
+	margin-left: 10px;
+}
+
+#sidebar ul li a{
+	color: #636363;
+	text-decoration:none;
+}
+
+#footer {
+	clear: both;
+	margin: 10px 0;
+	text-align: center;
+	background: #f0f0f0;
+	padding: 5px;
+	color: #555555;
+}
